@@ -1,0 +1,136 @@
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+img{
+    border-radius: 50%;
+    
+}
+
+.welcome{
+    
+    width: 70%;
+    max-width: 700px;
+    height: 40vh;
+    margin: auto;
+    font-size: 3rem;
+    
+}
+
+.form{
+    width: 70%;
+    max-width: 700px;
+    height: 80vh;
+    margin: auto;
+    
+}
+
+
+input{
+    padding: 1rem 2rem;
+    margin: 3rem  3rem 1rem 3rem ;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+
+}
+
+.tarea{
+    padding: 1rem 1rem 1rem 2rem;
+    width: 74%;
+    
+    margin: 1rem 3rem 1rem 3rem;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.363);
+
+}
+
+.send{
+    margin: 1rem 3rem 1rem 3rem;
+    padding: 0.5rem 2rem;
+    background-color:#36068a ;
+    color: white;
+    border-radius: 10px;
+    border: 0.5px solid white;
+    box-shadow: 10px 1px 36px -12px rgba(0,0,0,0.95);
+    
+}
+a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    body, html{
+        overflow-x: hidden;
+       }
+        
+       .navlink{
+        display: none;
+       }
+
+    
+       .form{
+        width: 50%;
+        max-width: 700px;
+        height: 80vh;
+        margin: auto;
+        
+    }
+
+    input{
+        padding: 1rem 1rem;
+        margin: 3rem  0rem 1rem 0rem ;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.363);
+        width: 70%;
+    
+    }
+    
+    .tarea{
+        padding: 1rem 1rem;
+        width: 70%;
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.363);
+    
+    }
+
+    
+  }
+
+
+
+@media screen and (max-width: 700px) {
+
+    body, html{
+        overflow-x: hidden;
+       }
+        
+    .navlink{
+     display: none;
+    }
+
+    input{
+        padding: 1rem 1rem;
+        margin: 3rem  0rem 1rem 0rem ;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.363);
+        width: 70%;
+    
+    }
+    
+    .tarea{
+        padding: 1rem 1rem;
+        width: 70%;
+        margin: 1rem 0rem 1rem 0rem;
+        border-radius: 5px;
+        border: 1px solid rgba(128, 128, 128, 0.363);
+    
+    }
+
+    
+  }

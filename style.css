@@ -1,0 +1,548 @@
+:root {
+
+--margin-normal-head: 2rem 2rem;
+--margin-normal-large: 3rem 2rem 1rem 2rem ;
+--margin-normal-extra: 7rem 2rem 2rem 2rem ;
+
+--margin-normal-bodypart: 0 2rem;
+--margin-special: 0rem;
+--margin-unnormal: 1rem;
+--ff-size-headlines: 3.2rem;
+--ff-size-sub-headlines: 2rem;
+--ff-size-normal: 1.2rem
+
+
+}
+
+html{
+    position: relative;
+}
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+header{
+
+margin:  var(--margin-normal-head) ;
+padding: 2rem;
+width: 90%;
+
+
+
+}
+
+span{
+    margin: 0.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: -5rem -1rem 0rem -1rem;
+
+    
+    height: 20vh;
+
+}
+.right-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+   
+    
+    
+}
+
+.burger-menu{
+    display: none;
+}
+.btn{
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    height: 150px;
+    margin-top: -0.8rem ;
+    
+}
+
+.navlink{
+    margin-right: 1.4rem ;
+    padding: 0.5rem; 
+    
+   
+}
+a{
+    text-decoration: none;
+    color: black;
+   
+    
+}
+
+.head-container{
+   
+    text-align: center;
+    margin: var(--margin-normal-bodypart);
+
+}
+
+.headline-cover{
+
+font-size: var(--ff-size-headlines);
+margin: var(--margin-normal-head);
+    
+}
+
+.subheadline{
+
+    font-size: var(--ff-size-sub-headlines);
+    margin: var(--margin-normal-head);
+
+}
+
+
+
+img{
+    height: 350px;
+    margin: var(--margin-normal-large);
+    border-radius: 50%;
+}
+.big-image{
+    margin: var(--margin-normal-large);
+}
+.colored-section{
+    text-align: center ;
+    background-color: #36068a;
+    width: 100%;
+    
+    height: 90vh;
+    margin: var(--margin-special);
+}
+
+.intro-word{
+
+margin: auto;
+height: 50vh;
+width: 50%;
+min-width: 50vw;
+}
+.intro-head{
+    font-size: var(--ff-size-sub-headlines);
+    margin: auto ;
+    color: white;
+    width: 100%;
+    max-width: 90vw;
+    padding: 2rem 0rem;
+
+}
+
+.intro-body{
+    font-size: var(--ff-size-normal);
+    margin: auto;
+    color: white;
+}
+
+.skills{
+    position:relative;
+    margin: auto;
+    width: 70%;
+    border-radius: 10px;
+   
+    
+   
+  
+    
+
+}
+
+.cards{
+    position: absolute;
+    top: -8rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 1px 36px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 1px 36px -15px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 1px 36px -15px rgba(0,0,0,0.75);
+    height: 120vh;
+    
+    
+
+  
+    
+    
+
+}
+
+
+.cards{
+
+    display: flex;
+    width: 100%;
+    
+  
+
+}
+.card{
+
+    
+    width: 100%;
+    border-left: 1px solid rgba(128, 128, 128, 0.116);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    
+    
+    
+}
+
+.icon{
+
+}
+
+.role{
+    font-size: var(--ff-size-sub-headlines) ;
+    margin: 2rem;
+}
+
+.justwords{
+  
+
+width: 40%;
+min-width: 100px;
+margin: var(--margin-normal-head);
+
+
+  
+
+}
+
+
+.subtopics{
+
+    margin: var(--margin-normal-head);
+    color: #0e37ec;
+    font-weight: bolder;
+}
+
+.experience{
+    margin-top: 50rem;
+
+}
+
+.work{
+    text-align: center;
+}
+
+.workheadline{
+    font-size: var(--ff-size-sub-headlines);
+    font-weight: bolder;
+    margin: var(--margin-unnormal);
+
+
+}
+.work-sub-headline{
+
+    font-size: var(--ff-size-normal);
+    margin: 2rem 0rem 6rem 0rem ;
+}
+
+.main-flex{
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0rem 0rem 15rem 0rem ;
+}
+.recent-work{
+    height: 35vh;
+    width: 25%;
+    border-radius: 10px;
+    background-color: #36068a ;
+}
+
+
+#e-com{
+    height: 100%;
+    width: 100%;
+     background-image: url(./assets/agency.PNG) ;
+     background-size: cover;
+     
+}
+
+#agency{
+    height: 100%;
+    width: 100%;
+     background-image: url(./assets/ecommerce-car.PNG) ;
+     background-size: cover;
+     
+}
+
+#thegame{
+    height: 100%;
+    width: 100%;
+     background-image: url(./assets/howmuchhowmuch.PNG) ;
+     background-size: cover;
+     
+}
+
+
+
+
+
+.work-btn{
+    margin-top: 10rem;
+    background: white;
+    padding: auto;
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+    cursor: pointer;
+    
+
+}
+
+.work:hover > .darkoverlay {
+    width:25%;
+    height:5.8%;
+    position:absolute;
+    background-color:rgb(20, 20, 20);
+    opacity:0.65;
+	-moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+
+div.recent-work:hover button {
+    display: block;
+}
+
+div.recent-work button {
+    position:absolute;
+    display:none;
+    z-index: 10;
+}
+div.recent-work button .visit {
+    top:0;
+    left:0;
+}
+div.recent-work button .github  {
+    top:0;
+    left:79%;
+}
+
+
+.final{
+    background-color: #36068a;
+    height: 100vh;
+    position: relative;
+}
+
+.rectangle{
+    background-color: rgb(2, 2, 20);
+    position: absolute;
+    top: -4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 25vh;
+    width: 80%;
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.hire-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.end-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    color: white;
+}
+
+.socials{
+    display: flex;
+    gap: 0.5rem;
+    
+}
+
+.social-network{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+.social{
+    height: 30px;
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+    
+    
+}
+
+.live{
+margin: var(--margin-normal-head);
+font-size: var(--ff-size-normal);
+}
+
+.socials{
+
+margin: var(--margin-normal-head);
+}
+
+.start{
+
+    font-size: var(--ff-size-normal);
+    }
+
+.getstarted{
+    padding: 1.2rem 2rem;
+    border-radius: 20px;
+}
+
+
+
+@media screen and (max-width: 700px){
+    body, html{
+        overflow-x: hidden;
+        position: relative;
+       }
+
+       
+
+       .burger-menu{
+        display: inline-block;
+        
+        margin-top: -1.9rem ;
+        margin-right: 2.5rem ;
+        
+
+    }
+
+    a{
+        color: white;
+    }
+
+   
+    .burger-menu > div{
+        width: 50px;
+        height: 5px;
+        background-color: black;
+        margin-top: 0.5rem;
+        border-radius: 10px;
+       
+      
+    }
+
+    .right-nav{
+        
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 50vh;
+        width: 50%;
+        background:#1f1e1e;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-out;
+       }
+
+       .nav-active{
+        transform: translateX(0%)
+       }
+
+       img{
+        height: 250px;
+        margin: var(--margin-normal-large);
+        border-radius: 50%;
+    }
+    svg{
+        width: 100%;
+    }
+
+    .colored-section{
+        margin-top: -5rem;
+    }
+
+    .toggle .burger1 {
+        transform: rotate(-45deg) translate(-5px, 5px);
+        background-color: white;
+      }
+      
+      .toggle .burger2 {
+        opacity: 0;
+      }
+      
+      .toggle .burger3 {
+        transform: rotate(+45deg) translate(-5px, -5px);
+        background-color: white;
+
+      }
+}
+
+
+
+@media screen and (max-width: 400px){
+
+   
+    .colored-section{
+        margin-top: -11rem;
+    }
+    .cards{
+
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 172vh;
+        
+      
+    
+    }
+    .main-flex{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .recent-work{
+        width: 90%;
+        margin: auto;
+        height: 25vh;
+    }
+    .experience{
+        margin-top: 100rem;
+    
+    }
+
+   
+
+   
+ 
+}
+
+.burgermovement{
+        
+}
