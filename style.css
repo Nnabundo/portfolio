@@ -22,6 +22,8 @@ body{
     margin: 0;
     padding: 0;
     position: relative;
+    width: 100%;
+   
 }
 
 header{
@@ -29,6 +31,8 @@ header{
 margin:  var(--margin-normal-head) ;
 padding: 2rem;
 width: 90%;
+
+
 
 
 
@@ -43,6 +47,8 @@ nav{
     justify-content: space-between;
     align-items: center;
     margin: -5rem -1rem 0rem -1rem;
+    width: 100%;
+    
 
     
     height: 20vh;
@@ -60,7 +66,11 @@ nav{
 
 .burger-menu{
     display: none;
+    
+   
 }
+
+
 .btn{
     padding: 1rem 2rem;
     border-radius: 20px;
@@ -70,7 +80,7 @@ nav{
 }
 
 .logo{
-    height: 150px;
+    height: 120px;
     margin-top: -0.8rem ;
     
 }
@@ -91,7 +101,14 @@ a{
 .head-container{
    
     text-align: center;
-    margin: var(--margin-normal-bodypart);
+    margin: auto;
+    padding: .5rem;
+    
+    width: 90%;
+
+ 
+
+
 
 }
 
@@ -112,7 +129,7 @@ margin: var(--margin-normal-head);
 
 
 img{
-    height: 350px;
+    width: 50%;
     margin: var(--margin-normal-large);
     border-radius: 50%;
 }
@@ -125,7 +142,7 @@ img{
     width: 100%;
     
     height: 90vh;
-    margin: var(--margin-special);
+    
 }
 
 .intro-word{
@@ -154,8 +171,9 @@ min-width: 50vw;
 .skills{
     position:relative;
     margin: auto;
-    width: 70%;
+    width: 80%;
     border-radius: 10px;
+    
    
     
    
@@ -173,6 +191,7 @@ min-width: 50vw;
     -webkit-box-shadow: 10px 1px 36px -15px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 1px 36px -15px rgba(0,0,0,0.75);
     height: 120vh;
+    width: 100%;
     
     
 
@@ -187,6 +206,7 @@ min-width: 50vw;
 
     display: flex;
     width: 100%;
+    
     
   
 
@@ -207,9 +227,6 @@ min-width: 50vw;
     
 }
 
-.icon{
-
-}
 
 .role{
     font-size: var(--ff-size-sub-headlines) ;
@@ -369,6 +386,7 @@ div.recent-work button .github  {
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    
 }
 
 .end-section{
@@ -427,18 +445,42 @@ margin: var(--margin-normal-head);
     body, html{
         overflow-x: hidden;
         position: relative;
+        
        }
 
        
+       nav{
+        display: flex;
+        justify-content: space-between;
+
+        
+       }
 
        .burger-menu{
         display: inline-block;
+      
         
         margin-top: -1.9rem ;
         margin-right: 2.5rem ;
         
 
     }
+    .cards{
+
+        display: flex;
+        width: 100%;
+        margin-top: 3rem;
+        
+        
+      
+    
+    }
+
+    .big-image{
+        margin: -2rem auto 2.5rem auto ;
+        
+    }
+ 
 
     a{
         color: white;
@@ -476,7 +518,7 @@ margin: var(--margin-normal-head);
        }
 
        img{
-        height: 250px;
+        height: 40%;
         margin: var(--margin-normal-large);
         border-radius: 50%;
     }
@@ -484,9 +526,7 @@ margin: var(--margin-normal-head);
         width: 100%;
     }
 
-    .colored-section{
-        margin-top: -5rem;
-    }
+
 
     .toggle .burger1 {
         transform: rotate(-45deg) translate(-5px, 5px);
@@ -502,22 +542,80 @@ margin: var(--margin-normal-head);
         background-color: white;
 
       }
+
+      .main-flex{
+        display: flex;
+        
+        gap: 1rem;
+        
+    }
+
+    .work:hover > .darkoverlay {
+        width:25%;
+        height: 5.2%;
+        position:absolute;
+        background-color:rgb(20, 20, 20);
+        opacity:0.65;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+    
+    
+    div.recent-work:hover button {
+        display: block;
+    }
+    
+    div.recent-work button {
+        position:absolute;
+        display: none;
+        z-index: 10;
+        background-color: #36068a;
+        
+        
+    }
+    div.recent-work button .visit {
+        top:0;
+        left:0;
+    }
+    div.recent-work button .github  {
+        top:0;
+        left:79%;
+    }
+
+
+
+      
+
+
+      
+
+
+      
 }
 
 
 
-@media screen and (max-width: 400px){
+
+
+
+@media screen and (max-width: 440px){
 
    
     .colored-section{
         margin-top: -11rem;
+        height: 140vh;
     }
+
+    
     .cards{
 
         display: flex;
         flex-direction: column;
         width: 100%;
-        height: 172vh;
+        height: 230vh;
+        margin-top: 5rem
+
         
       
     
@@ -525,6 +623,7 @@ margin: var(--margin-normal-head);
     .main-flex{
         display: flex;
         flex-direction: column;
+        gap: 4rem;
         
     }
     .recent-work{
@@ -537,12 +636,63 @@ margin: var(--margin-normal-head);
     
     }
 
-   
+    .burger-menu > div{
+        width: 30px;
+        height: 5px;
+        background-color: black;
+        margin-top: 0.2rem;
+        border-radius: 10px;
+       
+      
+    }
 
    
- 
-}
 
-.burgermovement{
+    .work:hover > .darkoverlay {
+        width:100%;
+        height: 2.7%;
+        position:absolute;
+        background-color:rgb(20, 20, 20);
+        opacity:0.65;
+        -moz-transition: all 1s;
+        -webkit-transition: all 1s;
+        transition: all 1s;
+    }
+    
+    
+    div.recent-work:hover button {
+        display: block;
+    }
+    
+    div.recent-work button {
+        position:absolute;
+        display: none;
+        z-index: 10;
+        background-color: purple;
         
+        
+    }
+    div.recent-work button .visit {
+        top:0;
+        left:0;
+    }
+    div.recent-work button .github  {
+        top:0;
+        left:79%;
+    }
+
+    .hire-me{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        padding: 0rem 1rem;
+        
+    }
+ 
+    .getstarted{
+        padding: .5rem .5rem;
+        border-radius: 20px;
+    }
 }
+
